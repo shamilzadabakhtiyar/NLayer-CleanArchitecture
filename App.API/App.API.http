@@ -1,0 +1,17 @@
+@App.API_HostAddress = https://localhost:7169
+
+### Get all products
+GET {{App.API_HostAddress}}/api/products
+
+### Get product by id
+GET {{App.API_HostAddress}}/api/products/14
+
+### Update product
+PUT {{App.API_HostAddress}}/api/products/14
+Content-Type: application/json
+{
+    "name": "pen 12",
+    "price": 0.10,
+    "stock": 20,
+    "categoryId": 1
+}
