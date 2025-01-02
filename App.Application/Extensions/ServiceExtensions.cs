@@ -18,15 +18,12 @@ namespace App.Application.Extensions
             services.Configure<ApiBehaviorOptions>(options => options.SuppressModelStateInvalidFilter = true);
             services.AddScoped<IProductService, ProductService>();
             services.AddScoped<ICategoryService, CategoryService>();
-            //services.AddScoped(typeof(NotFoundFilter<,>));
 
             services.AddFluentValidationAutoValidation();
 
             services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
 
-            //services.AddExceptionHandler<CriticalExceptionHandler>();
-            //services.AddExceptionHandler<GlobalExceptionHandler>();
             return services;
         }
     }

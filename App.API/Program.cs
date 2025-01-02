@@ -1,9 +1,6 @@
-using App.Repositories;
 using App.Repositories.Extensions;
 using App.Services;
 using App.Services.Extensions;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
