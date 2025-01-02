@@ -1,4 +1,4 @@
-﻿namespace App.Repositories
+﻿namespace App.Domain.Entities.Common
 {
     public interface IAuditEntity
     {
